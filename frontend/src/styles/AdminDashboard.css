@@ -1,0 +1,210 @@
+.admin-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.admin-header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.admin-user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-user-info p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.admin-content {
+  display: flex;
+  flex: 1;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-btn {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #333;
+  border-left: 4px solid transparent;
+}
+
+.sidebar-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-btn.active {
+  background-color: #e8eaf6;
+  color: #3f51b5;
+  border-left: 4px solid #3f51b5;
+  font-weight: 500;
+}
+
+.admin-main-content {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+/* Dashboard Overview Styles */
+.admin-dashboard-overview h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.stats-cards {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: 200px;
+  flex: 1;
+}
+
+.stat-card h3 {
+  margin-top: 0;
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #3f51b5;
+  margin: 10px 0;
+}
+
+.stat-card p {
+  margin-bottom: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Table Styles */
+.admin-faculty-list h2,
+.admin-student-list h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.table-heading p {
+  margin: 0;
+  font-weight: 500;
+  color: #666;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table thead {
+  background-color: #f5f5f5;
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 15px;
+  font-weight: 500;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.delete-btn {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ff1744;
+}
+
+.error-message {
+  color: #d32f2f;
+  padding: 15px;
+  background-color: #ffebee;
+  border-radius: 4px;
+  margin-bottom: 20px;
+} 
